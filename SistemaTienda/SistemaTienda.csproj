@@ -164,6 +164,34 @@
     <Compile Include="Migrations\202404100515342_AdiccionTablaProducto.designer.cs">
       <DependentUpon>202404100515342_AdiccionTablaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404100534132_AdiccionTablaFactura.cs" />
+    <Compile Include="Migrations\202404100534132_AdiccionTablaFactura.designer.cs">
+      <DependentUpon>202404100534132_AdiccionTablaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404100535014_AdiccionTablaFacturaDetalle.cs" />
+    <Compile Include="Migrations\202404100535014_AdiccionTablaFacturaDetalle.designer.cs">
+      <DependentUpon>202404100535014_AdiccionTablaFacturaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404100538534_CorrelacionClienteGrDesCondiPago.cs" />
+    <Compile Include="Migrations\202404100538534_CorrelacionClienteGrDesCondiPago.designer.cs">
+      <DependentUpon>202404100538534_CorrelacionClienteGrDesCondiPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404100541556_CorrelacionPedDetallePedidoProducto.cs" />
+    <Compile Include="Migrations\202404100541556_CorrelacionPedDetallePedidoProducto.designer.cs">
+      <DependentUpon>202404100541556_CorrelacionPedDetallePedidoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404100543117_CorrelacionFacturaClientePedido.cs" />
+    <Compile Include="Migrations\202404100543117_CorrelacionFacturaClientePedido.designer.cs">
+      <DependentUpon>202404100543117_CorrelacionFacturaClientePedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404100544339_CorrelacionFactuDetalleFacturaProducto.cs" />
+    <Compile Include="Migrations\202404100544339_CorrelacionFactuDetalleFacturaProducto.designer.cs">
+      <DependentUpon>202404100544339_CorrelacionFactuDetalleFacturaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404100546251_CorrelacionProductoCategoriaUnidadMedia.cs" />
+    <Compile Include="Migrations\202404100546251_CorrelacionProductoCategoriaUnidadMedia.designer.cs">
+      <DependentUpon>202404100546251_CorrelacionProductoCategoriaUnidadMedia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cliente.cs" />
@@ -283,6 +311,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202404100515342_AdiccionTablaProducto.resx">
       <DependentUpon>202404100515342_AdiccionTablaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100534132_AdiccionTablaFactura.resx">
+      <DependentUpon>202404100534132_AdiccionTablaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100535014_AdiccionTablaFacturaDetalle.resx">
+      <DependentUpon>202404100535014_AdiccionTablaFacturaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100538534_CorrelacionClienteGrDesCondiPago.resx">
+      <DependentUpon>202404100538534_CorrelacionClienteGrDesCondiPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100541556_CorrelacionPedDetallePedidoProducto.resx">
+      <DependentUpon>202404100541556_CorrelacionPedDetallePedidoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100543117_CorrelacionFacturaClientePedido.resx">
+      <DependentUpon>202404100543117_CorrelacionFacturaClientePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100544339_CorrelacionFactuDetalleFacturaProducto.resx">
+      <DependentUpon>202404100544339_CorrelacionFactuDetalleFacturaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100546251_CorrelacionProductoCategoriaUnidadMedia.resx">
+      <DependentUpon>202404100546251_CorrelacionProductoCategoriaUnidadMedia.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

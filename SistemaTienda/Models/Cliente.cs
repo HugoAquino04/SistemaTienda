@@ -24,7 +24,10 @@ namespace SistemaTienda.Models
 
         public int GrupoDescuentoId { get; set; }
 
+        public GrupoDescuento grupoDescuento { get; set; }
+
         public int CondicionPagoId { get; set; }
+        public CondicionPago condicionPago { get; set; }
 
         public bool Estado { get; set; }
 

@@ -14,8 +14,10 @@ namespace SistemaTienda.Models
         public int ProductoId { get; set; }
 
         public int CategoriaId { get; set; }
+        public Categorias Categorias { get; set; }
 
         public int UnidadMedidaId { get; set; }
+        public UnidadMedida UnidadMedida { get; set; }
         
         public DateTime FechaCreacion { get; set; }
 
