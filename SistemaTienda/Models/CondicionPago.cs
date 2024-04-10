@@ -25,5 +25,6 @@ namespace SistemaTienda.Models
         public int Dias { get; set; }
 
         public DateTime FechaCreacion { get; set; }
+        //
     }
 }
