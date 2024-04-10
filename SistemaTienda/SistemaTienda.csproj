@@ -156,6 +156,10 @@
     <Compile Include="Migrations\202404100503568_AdiccionTablaPedido.designer.cs">
       <DependentUpon>202404100503568_AdiccionTablaPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404100512099_AdiccionTablaPedidoDetalle.cs" />
+    <Compile Include="Migrations\202404100512099_AdiccionTablaPedidoDetalle.designer.cs">
+      <DependentUpon>202404100512099_AdiccionTablaPedidoDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cliente.cs" />
@@ -266,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202404100503568_AdiccionTablaPedido.resx">
       <DependentUpon>202404100503568_AdiccionTablaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100512099_AdiccionTablaPedidoDetalle.resx">
+      <DependentUpon>202404100512099_AdiccionTablaPedidoDetalle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

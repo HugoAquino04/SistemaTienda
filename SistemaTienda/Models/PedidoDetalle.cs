@@ -12,7 +12,6 @@ namespace SistemaTienda.Models
         public int PedidoDetalleId { get; set; }
 
         public int PedidoId { get; set; }
-        public Pedido Pedido { get; set; }
 
         public DateTime FechaCreacion { get; set; }
 
