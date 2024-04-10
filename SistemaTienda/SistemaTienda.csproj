@@ -144,6 +144,10 @@
     <Compile Include="Migrations\202404100442426_AdiccionTablaCategoria.designer.cs">
       <DependentUpon>202404100442426_AdiccionTablaCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404100448558_AdiccionTablaUnidadMedida.cs" />
+    <Compile Include="Migrations\202404100448558_AdiccionTablaUnidadMedida.designer.cs">
+      <DependentUpon>202404100448558_AdiccionTablaUnidadMedida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cliente.cs" />
@@ -242,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202404100442426_AdiccionTablaCategoria.resx">
       <DependentUpon>202404100442426_AdiccionTablaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100448558_AdiccionTablaUnidadMedida.resx">
+      <DependentUpon>202404100448558_AdiccionTablaUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
