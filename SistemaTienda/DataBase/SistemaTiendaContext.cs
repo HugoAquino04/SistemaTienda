@@ -28,7 +28,7 @@ namespace SistemaTienda.DataBase
         public DbSet<CondicionPago> CondicionPago { get; set; }
         public DbSet<Pedido> Pedido { get; set; }
         public DbSet<PedidoDetalle> PedidoDetalles { get; set; }   
-        
+        public DbSet<Producto> Producto { get; set; }
 
     }
 }
