@@ -22,5 +22,7 @@ namespace SistemaTienda.DataBase
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
         }
         public DbSet<Cliente> clientes { get; set; }
+        public DbSet<GrupoDescuento> grupoDescuentos { get; set; }
+        public DbSet<Categorias> Categorias { get; set; }
     }
 }

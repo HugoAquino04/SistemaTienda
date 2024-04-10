@@ -136,8 +136,18 @@
     <Compile Include="Migrations\202404100438155_AdiccionTablaCliente.designer.cs">
       <DependentUpon>202404100438155_AdiccionTablaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404100441130_AdiccionTablaGrupoDescuento.cs" />
+    <Compile Include="Migrations\202404100441130_AdiccionTablaGrupoDescuento.designer.cs">
+      <DependentUpon>202404100441130_AdiccionTablaGrupoDescuento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404100442426_AdiccionTablaCategoria.cs" />
+    <Compile Include="Migrations\202404100442426_AdiccionTablaCategoria.designer.cs">
+      <DependentUpon>202404100442426_AdiccionTablaCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\GrupoDescuento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +235,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202404100438155_AdiccionTablaCliente.resx">
       <DependentUpon>202404100438155_AdiccionTablaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100441130_AdiccionTablaGrupoDescuento.resx">
+      <DependentUpon>202404100441130_AdiccionTablaGrupoDescuento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404100442426_AdiccionTablaCategoria.resx">
+      <DependentUpon>202404100442426_AdiccionTablaCategoria.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
