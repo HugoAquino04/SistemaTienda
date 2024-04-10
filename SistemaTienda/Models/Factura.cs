@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -13,10 +15,8 @@ namespace SistemaTienda.Models
         public int FacturaId { get; set; }
 
         public int ClienteId { get; set; }
-        public Cliente Cliente { get; set; }
 
         public int PedidoId { get; set; }
-        public Pedido Pedido { get; set; }
 
         public DateTime FechaCreacion { get; set; }
 
@@ -29,5 +29,6 @@ namespace SistemaTienda.Models
         public decimal SubTotal { get; set; } = 0.10m;
 
         public decimal Descuento { get; set; } = 0.10m;
+        //
     }
 }
