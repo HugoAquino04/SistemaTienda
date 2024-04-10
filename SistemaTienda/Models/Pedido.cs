@@ -29,5 +29,7 @@ namespace SistemaTienda.Models
         public decimal SubTotal { get; set; } = 0.10m;
 
         public decimal Descuento { get; set; } = 0.10m;
+
+        //subida
     }
 }
