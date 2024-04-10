@@ -29,6 +29,7 @@ namespace SistemaTienda.DataBase
         public DbSet<Pedido> Pedido { get; set; }
         public DbSet<PedidoDetalle> PedidoDetalles { get; set; }   
         public DbSet<Producto> Producto { get; set; }
+        public DbSet<Factura> Factura { get; set; }
 
     }
 }
