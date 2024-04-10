@@ -24,5 +24,7 @@ namespace SistemaTienda.Models
         public bool Estado { get; set; }
 
         public DateTime FechaCreacion { get; set; }
+
+        //modificar
     }
 }
