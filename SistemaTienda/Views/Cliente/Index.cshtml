@@ -11,10 +11,7 @@
 <table class="table table-bordered">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.condicionPago.Codigo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.grupoDescuento.Codigo)
+            @Html.DisplayNameFor(model => model.ClienteId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Codigo)
@@ -37,10 +34,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.condicionPago.Codigo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.grupoDescuento.Codigo)
+            @Html.DisplayFor(modelItem => item.ClienteId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Codigo)
@@ -58,9 +52,9 @@
             @Html.DisplayFor(modelItem => item.FechaCreacion)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.ClienteId }, new { @class = "btn btn-success" })
-            @Html.ActionLink("Detalles", "Details", new { id=item.ClienteId }, new { @class = "btn btn-warning" })
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.ClienteId }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Editar", "Edit", new { id = item.ClienteId }, new { @class = "btn btn-success" }) 
+            @Html.ActionLink("Detalles", "Details", new { id = item.ClienteId }, new { @class = "btn btn-warning" }) 
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.ClienteId }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

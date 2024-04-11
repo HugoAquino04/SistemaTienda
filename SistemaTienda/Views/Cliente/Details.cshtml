@@ -4,26 +4,17 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Detalles Cliente</h2>
 
 <div>
-    <h4>Cliente</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.condicionPago.Codigo)
+            @Html.DisplayNameFor(model => model.ClienteId)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.condicionPago.Codigo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.grupoDescuento.Codigo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.grupoDescuento.Codigo)
+            @Html.DisplayFor(model => model.ClienteId)
         </dd>
 
         <dt>
@@ -69,6 +60,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ClienteId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ClienteId }, new { @class = "btn btn-success" }) |
+    @Html.ActionLink("Regresar", "Index", new { id = Model.ClienteId }, new { @class = "btn btn-secondary" })
 </p>
