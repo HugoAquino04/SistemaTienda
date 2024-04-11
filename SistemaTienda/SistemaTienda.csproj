@@ -275,7 +275,6 @@
     <Content Include="Views\GrupoDescuento\Details.cshtml" />
     <Content Include="Views\GrupoDescuento\Edit.cshtml" />
     <Content Include="Views\GrupoDescuento\Index.cshtml" />
-    <Content Include="Views\GrupoDescuento\GrupoDescuentoForm.cshtml" />
     <Content Include="Views\UnidadMedida\Create.cshtml" />
     <Content Include="Views\UnidadMedida\Delete.cshtml" />
     <Content Include="Views\UnidadMedida\Details.cshtml" />
