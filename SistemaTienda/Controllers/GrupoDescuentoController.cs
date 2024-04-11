@@ -15,10 +15,6 @@ namespace SistemaTienda.Controllers
     {
         private SistemaTiendaContext db = new SistemaTiendaContext();
 
-        public GrupoDescuentoController()
-        {
-
-        }
         public ActionResult Index()
         {
             return View(db.grupoDescuentos.ToList());

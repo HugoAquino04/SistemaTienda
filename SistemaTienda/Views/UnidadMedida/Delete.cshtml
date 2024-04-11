@@ -1,14 +1,14 @@
 ﻿@model SistemaTienda.Models.UnidadMedida
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Eliminar";
 }
 
-<h2>Eliminar</h2>
+<h2>Delete</h2>
 
 <h3>¿Estas seguro que deseas eliminarlo?</h3>
 <div>
-    <h4>UnidadMedida</h4>
+
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -45,14 +45,14 @@
 
     </dl>
 
+
     @using (Html.BeginForm())
     {
-
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-            @Html.ActionLink("Regresar", "Index", new { id = Model.UnidadMediaId }, new { @class = "btn btn-secondary" })
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index", new { id = Model.UnidadMedidaId }, new { @class = "btn btn-secondary" })
         </div>
     }
 </div>
