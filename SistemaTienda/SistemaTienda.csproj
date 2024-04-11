@@ -132,6 +132,7 @@
     <Compile Include="Controllers\GrupoDescuentoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\UnidadMedidaController.cs" />
     <Compile Include="DataBase\SistemaTiendaContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -275,6 +276,11 @@
     <Content Include="Views\GrupoDescuento\Edit.cshtml" />
     <Content Include="Views\GrupoDescuento\Index.cshtml" />
     <Content Include="Views\GrupoDescuento\GrupoDescuentoForm.cshtml" />
+    <Content Include="Views\UnidadMedida\Create.cshtml" />
+    <Content Include="Views\UnidadMedida\Delete.cshtml" />
+    <Content Include="Views\UnidadMedida\Details.cshtml" />
+    <Content Include="Views\UnidadMedida\Edit.cshtml" />
+    <Content Include="Views\UnidadMedida\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

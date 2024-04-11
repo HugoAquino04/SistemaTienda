@@ -23,8 +23,11 @@ namespace SistemaTienda.Models
 
         public bool Estado { get; set; }
 
+        [Display(Name = "Fecha Creacion")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime FechaCreacion { get; set; }
 
-        //modificar
+
     }
 }
