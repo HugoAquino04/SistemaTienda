@@ -18,7 +18,7 @@ namespace SistemaTienda.Controllers
         // GET: UnidadMedida
         public ActionResult Index()
         {
-            return View(db.unidadMedidas.ToList());
+            return View(db.UnidadMedida.ToList());
         }
 
         // GET: UnidadMedida/Details/5
@@ -28,7 +28,7 @@ namespace SistemaTienda.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UnidadMedida unidadMedida = db.unidadMedidas.Find(id);
+            UnidadMedida unidadMedida = db.UnidadMedida.Find(id);
             if (unidadMedida == null)
             {
                 return HttpNotFound();
@@ -66,7 +66,7 @@ namespace SistemaTienda.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UnidadMedida unidadMedida = db.unidadMedidas.Find(id);
+            UnidadMedida unidadMedida = db.UnidadMedida.Find(id);
             if (unidadMedida == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace SistemaTienda.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UnidadMedida unidadMedida = db.unidadMedidas.Find(id);
+            UnidadMedida unidadMedida = db.UnidadMedida.Find(id);
             if (unidadMedida == null)
             {
                 return HttpNotFound();
@@ -110,7 +110,7 @@ namespace SistemaTienda.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            UnidadMedida unidadMedida = db.unidadMedidas.Find(id);
+            UnidadMedida unidadMedida = db.UnidadMedida.Find(id);
             db.unidadMedidas.Remove(unidadMedida);
             db.SaveChanges();
             return RedirectToAction("Index");
