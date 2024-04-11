@@ -4,12 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Grupo Descuento</h2>
 
 <p>
-    @Html.ActionLink("Crear Grupo Descuento", "Create")
+    @Html.ActionLink("Nuevo", "Create", null, new { @Class = "btn btn-primary" })
 </p>
-<table class="table">
+<table class="table table-bordered">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Codigo)
@@ -26,7 +26,9 @@
         <th>
             @Html.DisplayNameFor(model => model.FechaCreacion)
         </th>
-        <th></th>
+        <th>
+            Acciones
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -48,8 +50,8 @@
         </td>
         <td>
             @Html.ActionLink("Editar", "Edit", new { id = item.GrupoDescuentoId }, new { @class = "btn btn-success" }) |
-            @Html.ActionLink("Detalles", "Details", new { id = item.GrupoDescuentoId }, new { @class = "btn btn-warning" }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id = item.GrupoDescuentoId }, new { @class = "btn btn-warning" }) |
+            @Html.ActionLink("Detalles", "Details", new { id = item.GrupoDescuentoId}, new { @class = "btn btn-warning" }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.GrupoDescuentoId }, new { @class = "btn btn-danger" }) |
         </td>
     </tr>
 }

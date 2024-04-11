@@ -15,12 +15,14 @@ namespace SistemaTienda.Controllers
     {
         private SistemaTiendaContext db = new SistemaTiendaContext();
 
+        // GET: GrupoDescuento
         public ActionResult Index()
         {
             return View(db.grupoDescuentos.ToList());
         }
 
-        public ActionResult Detalles(int? id)
+        // GET: GrupoDescuento/Details/5
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -34,15 +36,18 @@ namespace SistemaTienda.Controllers
             return View(grupoDescuento);
         }
 
-
-        public ActionResult Crear()
+        // GET: GrupoDescuento/Create
+        public ActionResult Create()
         {
             return View();
         }
 
+        // POST: GrupoDescuento/Create
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
+        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Crear([Bind(Include = "GrupoDescuentoId,Codigo,Descripcion,Estado,Porcentaje,FechaCreacion")] GrupoDescuento grupoDescuento)
+        public ActionResult Create([Bind(Include = "GrupoDescuentoId,Codigo,Descripcion,Estado,Porcentaje,FechaCreacion")] GrupoDescuento grupoDescuento)
         {
             if (ModelState.IsValid)
             {
@@ -54,8 +59,8 @@ namespace SistemaTienda.Controllers
             return View(grupoDescuento);
         }
 
-   
-        public ActionResult Editar(int? id)
+        // GET: GrupoDescuento/Edit/5
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -69,10 +74,12 @@ namespace SistemaTienda.Controllers
             return View(grupoDescuento);
         }
 
-       
+        // POST: GrupoDescuento/Edit/5
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
+        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Editar([Bind(Include = "GrupoDescuentoId,Codigo,Descripcion,Estado,Porcentaje,FechaCreacion")] GrupoDescuento grupoDescuento)
+        public ActionResult Edit([Bind(Include = "GrupoDescuentoId,Codigo,Descripcion,Estado,Porcentaje,FechaCreacion")] GrupoDescuento grupoDescuento)
         {
             if (ModelState.IsValid)
             {
@@ -83,8 +90,8 @@ namespace SistemaTienda.Controllers
             return View(grupoDescuento);
         }
 
-       
-        public ActionResult Eliminar(int? id)
+        // GET: GrupoDescuento/Delete/5
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -98,8 +105,8 @@ namespace SistemaTienda.Controllers
             return View(grupoDescuento);
         }
 
-       
-        [HttpPost, ActionName("Eliminar")]
+        // POST: GrupoDescuento/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {

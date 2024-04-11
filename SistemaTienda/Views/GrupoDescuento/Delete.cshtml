@@ -1,14 +1,14 @@
 ﻿@model SistemaTienda.Models.GrupoDescuento
 
 @{
-    ViewBag.Title = "Eliminar";
+    ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+<h2>Eliminar</h2>
 
-<h3>¿Estás seguro de que realmente quieres eliminarlo?</h3>
+<h3>¿Estas seguro que deseas eliminarlo?</h3>
 <div>
-    <h4>GrupoDescuento</h4>
+
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -53,12 +53,13 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Eliminar" class="btn btn-default" /> |
-            @Html.ActionLink("Regresar", "Index")
+            <input type="submit" value="Borrar" class="btn btn-danger" /> |
+            @Html.ActionLink("Regresar", "Index", new { id = Model.GrupoDescuentoId }, new { @class = "btn btn-secondary" })
         </div>
     }
 </div>
