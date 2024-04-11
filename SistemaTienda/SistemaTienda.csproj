@@ -286,6 +286,7 @@
     <Content Include="Views\CondicionPago\Details.cshtml" />
     <Content Include="Views\CondicionPago\Edit.cshtml" />
     <Content Include="Views\CondicionPago\Index.cshtml" />
+    <Content Include="Views\GrupoDescuento\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
