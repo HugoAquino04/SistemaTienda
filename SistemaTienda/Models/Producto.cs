@@ -13,9 +13,11 @@ namespace SistemaTienda.Models
         [Key]
         public int ProductoId { get; set; }
 
+        [Display(Name = "Categoria")]
         public int CategoriaId { get; set; }
         public Categorias Categorias { get; set; }
 
+        [Display(Name = "Unidad Medida")]
         public int UnidadMedidaId { get; set; }
         public UnidadMedida UnidadMedida { get; set; }
 
@@ -26,6 +28,7 @@ namespace SistemaTienda.Models
 
         public bool Estado { get; set; }
 
+        [Display(Name = "Precio Compra")]
         public decimal PrecioCompra { get; set; } = 0.10m;
     }
 }
