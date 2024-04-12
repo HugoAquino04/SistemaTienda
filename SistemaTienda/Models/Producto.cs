@@ -18,7 +18,10 @@ namespace SistemaTienda.Models
 
         public int UnidadMedidaId { get; set; }
         public UnidadMedida UnidadMedida { get; set; }
-        
+
+        [Display(Name = "Fecha Creacion")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime FechaCreacion { get; set; }
 
         public bool Estado { get; set; }

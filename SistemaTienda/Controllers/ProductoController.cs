@@ -11,17 +11,17 @@ using SistemaTienda.Models;
 
 namespace SistemaTienda.Controllers
 {
-    public class ProductoesController : Controller
+    public class ProductoController : Controller
     {
         private SistemaTiendaContext db = new SistemaTiendaContext();
 
-        // GET: Productoes
+        // GET: Producto
         public ActionResult Index()
         {
             return View(db.Producto.ToList());
         }
 
-        // GET: Productoes/Details/5
+        // GET: Producto/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -36,15 +36,15 @@ namespace SistemaTienda.Controllers
             return View(producto);
         }
 
-        // GET: Productoes/Create
+        // GET: Producto/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Productoes/Create
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
-        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Producto/Create
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
+        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ProductoId,CategoriaId,UnidadMedidaId,FechaCreacion,Estado,PrecioCompra")] Producto producto)
@@ -59,7 +59,7 @@ namespace SistemaTienda.Controllers
             return View(producto);
         }
 
-        // GET: Productoes/Edit/5
+        // GET: Producto/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -74,9 +74,9 @@ namespace SistemaTienda.Controllers
             return View(producto);
         }
 
-        // POST: Productoes/Edit/5
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
-        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Producto/Edit/5
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
+        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ProductoId,CategoriaId,UnidadMedidaId,FechaCreacion,Estado,PrecioCompra")] Producto producto)
@@ -90,7 +90,7 @@ namespace SistemaTienda.Controllers
             return View(producto);
         }
 
-        // GET: Productoes/Delete/5
+        // GET: Producto/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -105,7 +105,7 @@ namespace SistemaTienda.Controllers
             return View(producto);
         }
 
-        // POST: Productoes/Delete/5
+        // POST: Producto/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
