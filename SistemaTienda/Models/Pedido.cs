@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaTienda.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,7 +15,7 @@ namespace SistemaTienda.Models
         [Key]
         public int PedidoId { get; set; }
 
-        [Display(Name = "Cliente")]
+
         public int ClienteId { get; set; }
 
         public Cliente Cliente { get; set; }
@@ -28,7 +29,7 @@ namespace SistemaTienda.Models
 
         public DateTime FechaPedido { get; set; }
 
-        public bool Estado { get; set; }
+        public EstadoPedido Estado { get; set; }
 
         public decimal Total { get; set; } = 0.10m;
 

@@ -10,20 +10,16 @@ namespace SistemaTienda.Models
     public class PedidoDetalle
     {
         public int PedidoDetalleId { get; set; }
-
         public int PedidoId { get; set; }
         public Pedido Pedido { get; set; }
-
         public DateTime FechaCreacion { get; set; }
-
         public int ProductoId { get; set; }
         public Producto Producto { get; set; }
-
         public decimal Precio { get; set; } = 0.10m;
-
+        public decimal Cantidad { get; set; }
+        public decimal Descuento { get; set; } = 0.10m;
         public decimal SubTotal { get; set; } = 0.10m;
 
-        public decimal Descuento { get; set; } = 0.10m;
 
     }
 
