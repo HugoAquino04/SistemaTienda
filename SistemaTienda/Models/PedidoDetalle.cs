@@ -18,6 +18,7 @@ namespace SistemaTienda.Models
         public decimal Precio { get; set; } = 0.10m;
         public decimal Cantidad { get; set; }
         public decimal Descuento { get; set; } = 0.10m;
+        public decimal IVA { get; set; }
         public decimal SubTotal { get; set; } = 0.10m;
 
 
