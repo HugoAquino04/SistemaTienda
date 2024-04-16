@@ -14,11 +14,17 @@ namespace SistemaTienda.Models
         [Key]
         public int PedidoId { get; set; }
 
+        [Display(Name = "Cliente")]
         public int ClienteId { get; set; }
 
         public Cliente Cliente { get; set; }
 
         public DateTime FechaCreacion { get; set; }
+
+        [Required]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
+        [DataType(DataType.Date)]
+        [Display(Name = "Fecha")]
 
         public DateTime FechaPedido { get; set; }
 
