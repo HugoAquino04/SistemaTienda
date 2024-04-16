@@ -33,8 +33,6 @@ namespace SistemaTienda.Models
 
         public decimal Total { get; set; } = 0.10m;
 
-        public decimal IVA { get; set; }
-
         public decimal SubTotal { get; set; } = 0.10m;
 
         public decimal Descuento { get; set; } = 0.10m;
