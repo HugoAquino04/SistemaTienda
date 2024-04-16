@@ -215,6 +215,7 @@
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\UnidadMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewsModels\PedidoDetalleFormViewModel.cs" />
     <Compile Include="ViewsModels\PedidoFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,8 +8,10 @@ namespace SistemaTienda.ViewsModels
 {
     public class PedidoFormViewModel
     {
-        public  PedidoDetalle PedidoDetalle  { get; set; }
-        public  IEnumerable<Producto> Productos { get; set; }
+        public Pedido Pedido { get; set; }
+        public IEnumerable<Cliente> Cliente { get; set; }
+        public PedidoDetalleFormViewModel Tabla { get; set; }
+        public List<PedidoDetalleFormViewModel> Productos { get; set; }
 
     }
 }
