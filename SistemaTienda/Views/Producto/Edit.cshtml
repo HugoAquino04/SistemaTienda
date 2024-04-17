@@ -12,6 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
+        <h4>Producto</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ProductoId)
@@ -57,16 +58,15 @@
                 @Html.ValidationMessageFor(model => model.PrecioCompra, "", new { @class = "text-danger" })
             </div>
         </div>
-        <br/>
+        <br />
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Guuardar" class="btn btn-success" />
+                <input type="submit" value="Guardar" class="btn btn-success" /> |
                 @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-secondary" })
             </div>
         </div>
     </div>
 }
-
 
 
 @section Scripts {

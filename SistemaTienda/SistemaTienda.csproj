@@ -133,6 +133,7 @@
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\CondicionPagoController.cs" />
+    <Compile Include="Controllers\FacturaDetallesController.cs" />
     <Compile Include="Controllers\GrupoDescuentoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
@@ -238,6 +239,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="imagenes\Fondo.jpg.jpeg" />
+    <Content Include="imagenes\Fondo1.jpeg" />
+    <Content Include="imagenes\Fondo2.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -295,6 +299,11 @@
     <Content Include="Views\CondicionPago\Edit.cshtml" />
     <Content Include="Views\CondicionPago\Index.cshtml" />
     <Content Include="Views\GrupoDescuento\Create.cshtml" />
+    <Content Include="Views\FacturaDetalles\Create.cshtml" />
+    <Content Include="Views\FacturaDetalles\Delete.cshtml" />
+    <Content Include="Views\FacturaDetalles\Details.cshtml" />
+    <Content Include="Views\FacturaDetalles\Edit.cshtml" />
+    <Content Include="Views\FacturaDetalles\Index.cshtml" />
     <Content Include="Views\Producto\Create.cshtml" />
     <Content Include="Views\Producto\Delete.cshtml" />
     <Content Include="Views\Producto\Details.cshtml" />
