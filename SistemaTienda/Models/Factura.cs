@@ -17,11 +17,18 @@ namespace SistemaTienda.Models
         public int ClienteId { get; set; }
         public Cliente Cliente { get; set; }
 
+        [Display(Name = "Pedido")]
         public int PedidoId { get; set; }
         public Pedido pedido { get; set; }
 
+        [Display(Name = "Fecha Creacion")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime FechaCreacion { get; set; }
 
+        [Display(Name = "Fecha Factura")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime FechaFactura { get; set; }
 
         public bool Estado { get; set; }

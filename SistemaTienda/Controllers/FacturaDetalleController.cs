@@ -11,18 +11,18 @@ using SistemaTienda.Models;
 
 namespace SistemaTienda.Controllers
 {
-    public class FacturaDetallesController : Controller
+    public class FacturaDetalleController : Controller
     {
         private SistemaTiendaContext db = new SistemaTiendaContext();
 
-        // GET: FacturaDetalles
+        // GET: FacturaDetalle
         public ActionResult Index()
         {
             var facturaDetalle = db.FacturaDetalle.Include(f => f.Factura).Include(f => f.Producto);
             return View(facturaDetalle.ToList());
         }
 
-        // GET: FacturaDetalles/Details/5
+        // GET: FacturaDetalle/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -37,7 +37,7 @@ namespace SistemaTienda.Controllers
             return View(facturaDetalle);
         }
 
-        // GET: FacturaDetalles/Create
+        // GET: FacturaDetalle/Create
         public ActionResult Create()
         {
             ViewBag.FacturaId = new SelectList(db.Facturas, "FacturaId", "FacturaId");
@@ -45,7 +45,7 @@ namespace SistemaTienda.Controllers
             return View();
         }
 
-        // POST: FacturaDetalles/Create
+        // POST: FacturaDetalle/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
         // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -64,7 +64,7 @@ namespace SistemaTienda.Controllers
             return View(facturaDetalle);
         }
 
-        // GET: FacturaDetalles/Edit/5
+        // GET: FacturaDetalle/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -81,7 +81,7 @@ namespace SistemaTienda.Controllers
             return View(facturaDetalle);
         }
 
-        // POST: FacturaDetalles/Edit/5
+        // POST: FacturaDetalle/Edit/5
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
         // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -99,7 +99,7 @@ namespace SistemaTienda.Controllers
             return View(facturaDetalle);
         }
 
-        // GET: FacturaDetalles/Delete/5
+        // GET: FacturaDetalle/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -114,7 +114,7 @@ namespace SistemaTienda.Controllers
             return View(facturaDetalle);
         }
 
-        // POST: FacturaDetalles/Delete/5
+        // POST: FacturaDetalle/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

@@ -1,0 +1,53 @@
+﻿@model SistemaTienda.ViewsModels.PedidoFormViewModel
+@{
+    ViewBag.Title = "Crear";
+}
+
+<h2>Crear Pedido</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(m => m.Pedido.PedidoId)
+        <div class="form-group">
+            @Html.LabelFor(model => model.Pedido.ClienteId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Pedido.PedidoId,
+                                               new SelectList(Model.Cliente, "ClienteId", "ComboInfo"), "Seleccione una cliente", new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.Pedido.ClienteId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Pedido.FechaPedido, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Pedido.FechaPedido, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Pedido.FechaPedido, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-offset-2 col-md-10">
+            @Html.ActionLink("Agregar producto", "Agregar", new { id = Model.Pedido.ClienteId }, new { @class = "btn btn-default" })
+            <input type="submit" value="Guardar" class="btn btn-default" />
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Crear" class="btn btn-success" />
+            @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+    <br />
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

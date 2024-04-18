@@ -9,7 +9,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark ">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-info" style="font-weight:bold">
         <div class="container">
             @Html.ActionLink("Sistema Tienda", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
@@ -18,10 +18,10 @@
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Clientes", "Index", "Cliente", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Producto", "Index", "Producto", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Pedido", "Index", "Pedido", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Pedido Detalle", "Index", "PedidoDetalle", new { area = "" }, new { @class = "nav-link" })</li>
 
                     <li>@Html.ActionLink("Categoria", "Index", "Categoria", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Unidad Medida", "Index", "UnidadMedida", new { area = "" }, new { @class = "nav-link" })</li>
@@ -29,7 +29,7 @@
 
                     <li>@Html.ActionLink("Condicion Pago", "Index", "CondicionPago", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Factura", "Index", "Factura", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Factura Detalle", "Index", "FacturaDetalle", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Factura Detalle", "Index", "facturaDetalle", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
             </div>
         </div>
@@ -38,12 +38,10 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Sistema Tienda</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-</body>
-</html>

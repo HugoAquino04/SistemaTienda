@@ -1,0 +1,71 @@
+﻿@model IEnumerable<SistemaTienda.Models.Pedido>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado Pedido</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Pedido", "Crear", null, new { @Class = "btn btn-primary" })
+</p>
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cliente.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descuento)
+        </th>
+        <th>Acciones</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaCreacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaPedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descuento)
+        </td>
+        <td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.PedidoId }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Detalles", "Details", new { id = item.PedidoId }, new { @class = "btn btn-warning" })
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.PedidoId }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Factura", "Factura", new { id = item.PedidoId }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>
